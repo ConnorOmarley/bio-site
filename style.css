@@ -33,28 +33,35 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .ic { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ---------- topo ---------- */
-.hero { position: relative; height: min(64svh, 480px); min-height: 380px; background: var(--ink); color: #fff; overflow: hidden; }
+.hero { position: relative; height: 300px; background: var(--ink); overflow: hidden; }
 .hero-media { position: absolute; inset: 0; background: var(--ink) center / cover no-repeat; }
 .hero-media video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40, 10, 46, .28) 0%, rgba(40, 10, 46, 0) 32%, rgba(40, 10, 46, .9) 100%); }
-.hero-text { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 20px 54px; }
-.avatar { width: 64px; height: 64px; margin-bottom: 14px; padding: 3px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), #fff 55%, var(--accent)); }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40, 10, 46, .22) 0%, rgba(40, 10, 46, 0) 40%); }
+
+/* Foto redonda no meio, metade sobre o vídeo e metade sobre a página; nome e frase logo abaixo. */
+.profile { padding-top: 62px; margin-bottom: 22px; text-align: center; }
+.avatar {
+  position: absolute; top: -60px; left: 50%; transform: translateX(-50%);
+  width: 120px; height: 120px; padding: 4px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), #fff 55%, var(--accent));
+  box-shadow: 0 12px 26px -10px rgba(58, 18, 64, .55);
+}
 .avatar img { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background: var(--line); }
 h1 {
   margin: 0 0 8px; font-family: var(--serif); font-weight: 500;
-  font-size: clamp(32px, 10vw, 44px); line-height: 1.04; letter-spacing: -.01em; color: #fff;
+  font-size: clamp(26px, 8vw, 32px); line-height: 1.1; letter-spacing: -.005em; color: var(--ink);
 }
 /* O momento de destaque da página: um brilho passa uma única vez sobre o nome, como luz em cabelo liso. */
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   h1 {
     color: transparent;
-    background: linear-gradient(105deg, #fff 0 42%, #FFE7C0 50%, #fff 58% 100%) 100% 0 / 300% 100% no-repeat;
+    background: linear-gradient(105deg, var(--ink) 0 42%, #D9A441 50%, var(--ink) 58% 100%) 100% 0 / 300% 100% no-repeat;
     -webkit-background-clip: text; background-clip: text;
     animation: sheen 1.9s .5s ease-out both;
   }
 }
 @keyframes sheen { from { background-position: 100% 0; } to { background-position: 0 0; } }
-.tagline { margin: 0; font-family: var(--serif); font-style: italic; font-size: 19px; line-height: 1.3; color: #F1DFC2; }
+.tagline { margin: 0 auto; max-width: 32ch; font-family: var(--serif); font-style: italic; font-size: 18px; line-height: 1.35; color: var(--muted); }
 
 .sheet { position: relative; margin-top: -30px; padding: 22px 16px 36px; background: var(--bg); border-radius: 28px 28px 0 0; }
 
