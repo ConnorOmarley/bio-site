@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3A1240">
+  <title>Bio</title>
+  <link rel="icon" href="img/avatar.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,400&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-media" id="cover"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-text">
+        <div class="avatar"><img id="avatar" alt=""></div>
+        <h1 id="name"></h1>
+        <p class="tagline" id="tagline"></p>
+      </div>
+    </header>
+
+    <div class="sheet">
+      <div id="links"></div>
+      <div id="showcase"></div>
+      <div id="gallery"></div>
+      <div id="location"></div>
+      <footer class="credit" id="credit"></footer>
+    </div>
+  </main>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" data-act="close" aria-label="Fechar">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="config.js"></script>
+  <script src="logic.js"></script>
+  <script src="vendor/qrcode.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
