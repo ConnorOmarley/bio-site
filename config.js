@@ -12,7 +12,7 @@ window.CONFIG = {
   name: 'STUDIO EXEMPLO BELEZA',
   tagline: 'Beleza e cuidado em cada detalhe',
 
-  avatar: 'img/avatar.svg',
+  avatar: 'img/avatar.jpg', // foto de perfil (redonda)
   cover: 'img/cover.svg', // imagem de capa (também aparece enquanto o vídeo carrega)
   coverVideo: 'img/cover.mp4', // vídeo curto da capa (sem som, repete sozinho). Vazio = só a imagem.
 
