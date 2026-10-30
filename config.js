@@ -52,6 +52,6 @@ window.CONFIG = {
   creditUrl: '',
 
   // Cores: primary = botão principal, ink = textos e topo, accent = linhas finas,
-  // background = fundo, google = só o ícone de avaliação.
-  theme: { primary: '#C2307A', ink: '#3A1240', accent: '#CDA877', background: '#FBF6F8', google: '#2563EB' },
+  // background = fundo. (Os ícones de WhatsApp, Instagram, Google e Pix usam as cores oficiais das marcas.)
+  theme: { primary: '#C2307A', ink: '#3A1240', accent: '#CDA877', background: '#FBF6F8' },
 };

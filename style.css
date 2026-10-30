@@ -4,7 +4,6 @@
   --ink: #3A1240;
   --accent: #CDA877;
   --bg: #FBF6F8;
-  --google: #2563EB;
   --line: #E9DDE6;
   --muted: #7B6680;
   --serif: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
@@ -87,8 +86,14 @@ h1 {
 }
 .item + .item { border-top: 1px solid var(--line); }
 .item:hover { background: color-mix(in srgb, var(--primary) 4%, white); }
-.chip { display: grid; place-items: center; width: 36px; height: 36px; flex: none; border-radius: 50%; background: color-mix(in srgb, var(--primary) 11%, white); color: var(--primary); }
-.item.google .chip { background: color-mix(in srgb, var(--google) 11%, white); color: var(--google); }
+.chip { display: grid; place-items: center; width: 38px; height: 38px; flex: none; border-radius: 50%; background: #fff; border: 1px solid var(--line); box-shadow: 0 2px 6px -3px rgba(40, 10, 46, .18); color: var(--primary); }
+.chip .ic { width: 21px; height: 21px; }
+/* Logos de marca: preenchidos (não contorno), cada um na cor oficial. */
+.ic.brand { fill: currentColor; stroke: none; }
+.item.whatsapp .chip { color: #25D366; }
+.item.google .chip .ic { width: 19px; height: 19px; }
+.item.pix .chip, .modal .badge.pix { color: #32BCAD; }
+.modal .badge.pix { background: #E6F7F5; }
 .item .end { width: 18px; height: 18px; margin-left: auto; color: var(--accent); }
 
 /* ---------- agendamento (dentro do painel) ---------- */

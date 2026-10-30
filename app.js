@@ -23,6 +23,16 @@
   };
   const icon = (n, cls) => '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" aria-hidden="true">' + ICONS[n] + '</svg>';
 
+  // Logos das marcas (preenchidos, com as cores oficiais). O Google usa um desenho de 48x48.
+  const BRANDS = {
+    whatsapp: { vb: 24, svg: '<path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.12-.28-.2-.57-.35zm-5.42 7.4a9.87 9.87 0 0 1-5.03-1.37l-.36-.22-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88zm8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.9 0-3.17-1.24-6.16-3.48-8.41z"/>' },
+    instagram: { vb: 24, svg: '<defs><linearGradient id="ig-grad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".6" stop-color="#D62976"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs>' +
+      '<g fill="none" stroke="url(#ig-grad)" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/></g><circle cx="17.6" cy="6.4" r="1.3" fill="#D62976"/>' },
+    google: { vb: 48, svg: '<path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>' },
+    pix: { vb: 24, svg: '<path d="M5.28 18.36a3.5 3.5 0 0 0 2.5-1.03l3.6-3.6a.68.68 0 0 1 .94 0l3.62 3.61a3.5 3.5 0 0 0 2.49 1.03h.71l-4.56 4.56a3.65 3.65 0 0 1-5.16 0l-4.57-4.57zM18.43 5.63a3.5 3.5 0 0 0-2.5 1.03l-3.6 3.61a.67.67 0 0 1-.95 0l-3.6-3.6a3.5 3.5 0 0 0-2.5-1.03h-.43l4.57-4.57a3.65 3.65 0 0 1 5.16 0l4.56 4.56zM1.07 9.42 3.79 6.7h1.49c.66 0 1.28.26 1.75.72l3.6 3.6a1.73 1.73 0 0 0 2.44 0l3.61-3.61c.47-.47 1.1-.73 1.75-.73h1.77l2.73 2.74a3.65 3.65 0 0 1 0 5.16l-2.73 2.73h-1.77c-.65 0-1.28-.26-1.75-.72l-3.61-3.61a1.77 1.77 0 0 0-2.44 0l-3.6 3.6c-.47.46-1.09.72-1.75.72H3.79l-2.72-2.72a3.65 3.65 0 0 1 0-5.16z"/>' },
+  };
+  const brand = (n) => '<svg class="ic brand" viewBox="0 0 ' + BRANDS[n].vb + ' ' + BRANDS[n].vb + '" aria-hidden="true">' + BRANDS[n].svg + '</svg>';
+
   // ---------- utilitários ----------
   // Aviso dentro das janelas do Pix quando a página é só uma demonstração (config.js: demo: true).
   const demoNote = () => (C.demo ? '<p class="demo-note">Modo demonstração: a chave Pix é fictícia. Não faça pagamentos reais.</p>' : '');
@@ -72,7 +82,6 @@
     rs.setProperty('--primary', C.theme.primary);
     rs.setProperty('--ink', C.theme.ink);
     rs.setProperty('--accent', C.theme.accent);
-    rs.setProperty('--google', C.theme.google);
     rs.setProperty('--bg', C.theme.background);
     document.title = C.name;
     const cover = $('#cover');
@@ -97,18 +106,19 @@
   function renderLinks() {
     const waUrl = 'https://wa.me/' + C.whatsapp.replace(/\D/g, '');
     // Uma linha da lista: link para fora (<a>) ou ação da própria página (<button>).
+    // `ic` é o desenho do ícone já pronto: brand('...') para logos, icon('...') para os demais.
     const row = (tag, attrs, cls, ic, label) =>
-      '<' + tag + ' class="item ' + cls + '" ' + attrs + '><span class="chip">' + icon(ic) + '</span><span>' + label + '</span>' + icon('arrow', 'end') + '</' + tag + '>';
+      '<' + tag + ' class="item ' + cls + '" ' + attrs + '><span class="chip">' + ic + '</span><span>' + label + '</span>' + icon('arrow', 'end') + '</' + tag + '>';
     const link = (href, cls, ic, label) => row('a', 'href="' + esc(href) + '" target="_blank" rel="noopener"', cls, ic, label);
-    const action = (act, ic, label) => row('button', 'data-act="' + act + '"', '', ic, label);
+    const action = (act, cls, ic, label) => row('button', 'data-act="' + act + '"', cls, ic, label);
 
     // Linha sem dado no config.js (campo vazio) não aparece.
     const items = [
-      link(waUrl, '', 'chat', 'WhatsApp'),
-      C.instagram && link(C.instagram, '', 'instagram', 'Instagram'),
-      C.googleReview && link(C.googleReview, 'google', 'star', 'Avaliar no Google'),
-      C.pix.key && action('pix', 'qr', 'Chave Pix'),
-      C.wifi.network && action('wifi', 'wifi', 'WiFi'),
+      link(waUrl, 'whatsapp', brand('whatsapp'), 'WhatsApp'),
+      C.instagram && link(C.instagram, 'instagram', brand('instagram'), 'Instagram'),
+      C.googleReview && link(C.googleReview, 'google', brand('google'), 'Avaliar no Google'),
+      C.pix.key && action('pix', 'pix', brand('pix'), 'Chave Pix'),
+      C.wifi.network && action('wifi', '', icon('wifi'), 'WiFi'),
     ].filter(Boolean);
 
     // Só "Agende aqui" é um botão grande: é a ação que traz cliente. O resto fica numa lista calma.
@@ -240,7 +250,7 @@
   // ---------- Pix e WiFi (a tela do Pix é concluída na Tarefa 4) ----------
   function showPixForm(error) {
     openModal(
-      '<div class="badge">' + icon('qr') + '</div>' +
+      '<div class="badge pix">' + brand('pix') + '</div>' +
       '<h3>Pagar com Pix</h3><p class="sub">Preencha os dados: o Pix cai direto para ' + esc(C.name) + '.</p>' +
       '<label for="p-name">Seu nome</label><input id="p-name" placeholder="Ex: João Silva" autocomplete="name">' +
       '<label for="p-amount">Valor (R$)</label><input id="p-amount" inputmode="decimal" placeholder="50,00">' +
