@@ -9,8 +9,8 @@ window.CONFIG = {
   demo: true,
 
   // TODOS OS DADOS ABAIXO SÃO FICTÍCIOS (demonstração). Troque pelos dados reais de cada cliente.
-  name: 'STUDIO EXEMPLO BELEZA',
-  tagline: 'Beleza e cuidado em cada detalhe',
+  name: 'ATELIÊ LUMI',
+  tagline: 'Beleza que ilumina você',
 
   avatar: 'img/avatar.jpg', // foto de perfil (redonda)
   cover: 'img/cover.svg', // imagem de capa (também aparece enquanto o vídeo carrega)
@@ -25,9 +25,9 @@ window.CONFIG = {
   googleReview: 'https://g.page/r/exemplo/review',
 
   // Chave Pix FICTÍCIA para a demonstração. name = nome do recebedor, city = cidade.
-  pix: { key: 'demonstracao@exemplo.com', name: 'Studio Exemplo Beleza', city: 'Sao Paulo' },
+  pix: { key: 'demonstracao@exemplo.com', name: 'Ateliê Lumi', city: 'Sao Paulo' },
 
-  wifi: { network: 'Studio-Exemplo', password: 'demonstracao123' },
+  wifi: { network: 'Atelie-Lumi', password: 'demonstracao123' },
 
   // Dias de atendimento: 0 = domingo, 1 = segunda ... 6 = sábado
   openWeekdays: [1, 2, 3, 4, 5],
