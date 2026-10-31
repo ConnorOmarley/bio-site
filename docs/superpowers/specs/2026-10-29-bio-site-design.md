@@ -1,8 +1,8 @@
-# Bio site estilo Coonexta — Etapa 1
+# Bio site (link na bio) — Etapa 1
 
 ## Objetivo
-Página única de "link na bio", pensada para celular, no estilo do Coonexta (coonexta.com.br),
-para a irmã do usuário (nicho: cabelo). Deve ser fácil trocar de nicho/cliente, porque o usuário
+Página única de "link na bio", pensada para celular, no estilo dos sites de link na bio com agendamento,
+para uma cabeleireira (nicho: cabelo). Deve ser fácil trocar de nicho/cliente, porque o usuário
 pretende, depois, oferecer isso a outros clientes por mensalidade (Etapa 2, fora deste escopo).
 
 ## Fora do escopo (Etapa 2)
@@ -13,7 +13,7 @@ Painel do cliente, login, banco de dados, bloqueio automático de horários ocup
 - Tecnologia: HTML + CSS + JavaScript simples, sem servidor e sem bibliotecas novas.
 - Todos os dados do cliente ficam em um único arquivo de configuração (`config.js`).
 
-## Funcionalidades (vistas nos prints do Coonexta)
+## Funcionalidades (vistas em exemplos de sites de link na bio)
 1. Capa no topo, foto de perfil quadrada arredondada sobreposta, nome, frase curta com emojis.
 2. Botões grandes e arredondados com ícone: Agende aqui (expansível), Instagram, WhatsApp,
    Avaliar no Google (azul), Chave Pix (expansível), WiFi (expansível).

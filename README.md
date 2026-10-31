@@ -63,3 +63,7 @@ img/         fotos e vídeo da capa
 vendor/      biblioteca de QR Code
 tests/       testes automáticos
 ```
+
+## Licença
+
+MIT. Veja o arquivo [LICENSE](LICENSE). A biblioteca em `vendor/qrcode.js` mantém a licença própria, também MIT.
