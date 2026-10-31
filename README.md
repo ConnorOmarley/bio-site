@@ -4,6 +4,8 @@ Página única, feita para celular, no estilo "link na bio": o cliente do seu cl
 
 Este repositório é uma **demonstração**: todos os dados (nome "Ateliê Lumi", número, chave Pix e senha de Wi-Fi) são fictícios.
 
+**Veja funcionando:** https://connoromarley.github.io/bio-site/ (abra no celular).
+
 ## O que a página faz
 
 - **Agendamento:** a pessoa escolhe o serviço, o dia e o horário, informa nome, telefone e observações, e o WhatsApp abre com a mensagem pronta. Dias fechados ficam desabilitados e os horários são gerados a partir do expediente.
