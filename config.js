@@ -22,10 +22,9 @@ window.CONFIG = {
   whatsapp: '5581999070229',
 
   instagram: 'https://www.instagram.com/impulso.teech/',
-  // Provisório: abre a busca da Impulso Tech no Google Maps (funciona, mas não abre a janela de avaliação).
-  // Quando a Impulso Tech tiver o Perfil da Empresa no Google, troque pelo link de "Pedir avaliações".
-  // Vazio = o botão some.
-  googleReview: 'https://www.google.com/maps/search/?api=1&query=Impulso+Tech+Recife',
+  // Link de avaliação do Perfil da Empresa da Impulso Tech. Ao entregar para um cliente,
+  // troque pelo link de "Pedir avaliações" dele. Vazio = o botão some.
+  googleReview: 'https://g.page/r/CcfoVGRy9NtzECE/review',
 
   // Chave Pix FICTÍCIA para a demonstração. name = nome do recebedor, city = cidade.
   pix: { key: 'demonstracao@exemplo.com', name: 'Ateliê Lumi', city: 'Recife' },
