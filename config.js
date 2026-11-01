@@ -25,7 +25,7 @@ window.CONFIG = {
   googleReview: 'https://g.page/r/exemplo/review',
 
   // Chave Pix FICTÍCIA para a demonstração. name = nome do recebedor, city = cidade.
-  pix: { key: 'demonstracao@exemplo.com', name: 'Ateliê Lumi', city: 'Sao Paulo' },
+  pix: { key: 'demonstracao@exemplo.com', name: 'Ateliê Lumi', city: 'Recife' },
 
   wifi: { network: 'Atelie-Lumi', password: 'demonstracao123' },
 
@@ -35,16 +35,16 @@ window.CONFIG = {
 
   // price: null mostra "a combinar".
   services: [
-    { name: 'Alisamento', minutes: 120, price: null, photo: 'img/liso.jpg', description: 'Fios alinhados, brilho de espelho' },
-    { name: 'Cílios', minutes: 90, price: null, photo: 'img/cilios.jpg', description: 'Olhar marcante com leveza' },
-    { name: 'Epilação', minutes: 30, price: null, photo: 'img/epilacao.jpg', description: 'Pele lisa, com todo o cuidado' },
+    { name: 'Alisamento', minutes: 120, price: 180, photo: 'img/liso.jpg', description: 'Fios alinhados, brilho de espelho' },
+    { name: 'Cílios', minutes: 90, price: 120, photo: 'img/cilios.jpg', description: 'Olhar marcante com leveza' },
+    { name: 'Epilação', minutes: 30, price: 60, photo: 'img/epilacao.jpg', description: 'Pele lisa, com todo o cuidado' },
   ],
 
   gallery: ['img/galeria1.jpg', 'img/galeria2.jpg', 'img/galeria3.jpg'],
 
   address: {
-    text: 'Avenida Paulista, 1000, Bela Vista, São Paulo - SP',
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Avenida+Paulista+1000+Bela+Vista+S%C3%A3o+Paulo+SP',
+    text: 'Avenida Boa Viagem, 1000, Boa Viagem, Recife - PE',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Avenida+Boa+Viagem+1000+Boa+Viagem+Recife+PE',
   },
 
   // Assinatura no rodapé ("Feito por ..."). Vazio = não aparece.
